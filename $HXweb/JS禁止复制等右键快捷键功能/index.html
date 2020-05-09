@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JS控制</title>
+	</head>
+	<body>
+	<!--
+	<body οncοntextmenu="return false;" onselectstart="return false">
+	
+	
+	document.onselectstart=new Function("event.returnValue=false");
+	-->
+	<div oncontextmenu="return false;" onselectstart="return false;" style="background-color:#ff0000;">
+		<p>已经控制，此文本无法复制</p>
+	</div>
+	<div style="background-color:#00ff00">
+		<p>未控制，此文本可以复制</p>
+	</div>
+	<div style="background-color: lightskyblue;">
+		<script src="./js/control.js">
+			
+		</script>
+	</div>
+	<div style="background-color: azure;" oncopy="alert('对不起，禁止复制！');return false;">
+		<p>以控制，禁用复制，并弹出窗口</p>
+	</div>
+	</body>
+</html>
